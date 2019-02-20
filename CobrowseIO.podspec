@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
     s.frameworks = 'Foundation', 'CoreLocation', 'Security'
     s.ios.deployment_target = '9.0'
     s.static_framework = true
-    s.dependency 'Socket.IO-Client-Swift', '~> 14.0'
     s.source = { :git => 'https://github.com/cobrowseio/cobrowse-sdk-ios-binary.git', :tag => 'v'+s.version.to_s }
     s.default_subspec = 'Release'
     s.subspec 'Release' do |sp|
